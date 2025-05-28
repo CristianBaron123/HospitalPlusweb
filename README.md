@@ -164,7 +164,3 @@ node app.js
 - Endpoints para creación, edición y consulta de citas médicas
 
 ---
-
-## 📄 Licencia
-
-Este proyecto está licenciado bajo la **Licencia MIT**. Puedes consultar el archivo `LICENSE` para más información.
