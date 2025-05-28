@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

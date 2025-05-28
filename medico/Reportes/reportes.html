@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes Médicos - SaludPlus</title>
+  <link rel="stylesheet" href="../../admin/base.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="../../admin/navigation.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <img src="https://img.freepik.com/vector-gratis/cruz-medica-vector-diseno-logotipo-hospital_53876-136743.jpg" alt="Logo SaludPlus" class="logo-medico">
+      </div>
+      
+      <ul class="menu">
+        
+        <li class="menu-item" id="agenda-link">
+          <span class="material-symbols-outlined menu-icon">calendar_today</span>
+          Pacientes
+        </li>
+        <li class="menu-item" id="hce-link">
+          <span class="material-symbols-outlined menu-icon">clinical_notes</span>
+          HCE
+        </li>
+        <li class="menu-item active" id="reportes-link">
+          <span class="material-symbols-outlined menu-icon">summarize</span>
+          Reportes
+        </li>
+        <li class="menu-item" id="configuracion-link">
+          <span class="material-symbols-outlined menu-icon">settings</span>
+          Configuración
+        </li>
+      </ul>
+    </div>
+    
+          <div class="main-content">
+              <div class="top-bar">
+        <div class="header">
+          <h1>Reportes médicos</h1>
+          <div class="user-actions">
+  
+ 
+            <div class="user-info">
+              <div class="user-details">
+                <div class="user-name">Cristina</div>
+                <div class="user-role">Medico</div>
+              </div>
+              <div class="user-avatar">C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+              <div class="content-container">
+                  <section class="stats-section">
+          <h2 class="section-title">Estadísticas generales</h2>
+          
+          <div class="stats-grid">
+                          <div class="stat-card">
+              <h3>Citas totales</h3>
+              <div class="stat-value">12</div>
+              <div class="stat-trend up">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span>12% Mayo</span>
+              </div>
+            </div>
+            
+                          <div class="stat-card">
+              <h3>Urgencias</h3>
+              <div class="stat-value">5</div>
+              <div class="stat-trend down">
+                <span class="material-symbols-outlined">trending_down</span>
+                <span>5% Mayo</span>
+              </div>
+            </div>
+            
+                          <div class="stat-card">
+              <h3>Satisfacción</h3>
+              <div class="stat-value">85%</div>
+              <div class="stat-trend up">
+                <span class="material-symbols-outlined">trending_up</span>
+                <span>3% Mayo</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+                  <section class="charts-section">
+          <div class="chart-row">
+                          <div class="chart-container">
+              <h2 class="section-title">Citas por especialidad</h2>
+              <div class="chart-wrapper">
+                <canvas id="specialtyBarChart"></canvas>
+              </div>
+            </div>
+            
+            <div class="chart-container">
+              <h2 class="section-title">Satisfacción</h2>
+              <div class="chart-wrapper">
+                <canvas id="satisfactionPieChart"></canvas>
+              </div>
+              <div class="satisfaction-list">
+                <div class="satisfaction-item">
+                  <span class="satisfaction-label">Satisfechos</span>
+                  <span class="satisfaction-value">85%</span>
+                </div>
+                <div class="satisfaction-item">
+                  <span class="satisfaction-label">Insatisfechos</span>
+                  <span class="satisfaction-value">15%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+                      <div class="table-container">
+            <h2 class="section-title">Top médicos</h2>
+            <table class="doctors-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Médico</th>
+                  <th>Pacientes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Dra. López</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Dr. Martinez</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Dr. Amirul Haque</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+  
+.config-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #1a73e8;
+}
+
+.form-subtitle {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 25px 0 15px;
+}
+
+.form-label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-table {
+  display: table;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: table-row;
+}
+
+.form-cell {
+  display: table-cell;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.form-cell:last-child {
+  padding-right: 0;
+}
+
+.form-divider {
+  height: 1px;
+  background-color: #eee;
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.discard-btn {
+  background-color: #f5f5f5;
+  color: #555;
+}
+
+.discard-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.save-btn {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #0d62c9;
+}
+
+  .notification {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.notification .material-symbols-outlined {
+  font-size: 24px;
+}

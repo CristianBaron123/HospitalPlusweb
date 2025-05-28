@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - SaludPlus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <main>
+    <section class="login-section">
+      <div class="login-container">
+        <div class="logo">
+          <img src="https://img.freepik.com/vector-gratis/cruz-medica-vector-diseno-logotipo-hospital_53876-136743.jpg" alt="SaludPlus Logo" />
+        </div>
+
+        <div class="roles-container">
+          <div class="role-card admin" data-role="admin">
+            <div class="role-icon">
+              <span class="material-icons">admin_panel_settings</span>
+            </div>
+            <p class="role-title">ADMIN</p>
+          </div>
+
+          <div class="role-card medic" data-role="medic">
+            <div class="role-icon">
+              <span class="material-icons">medical_services</span>
+            </div>
+            <p class="role-title">MÉDICO</p>
+          </div>
+
+          <div class="role-card patient" data-role="patient">
+            <div class="role-icon">
+              <span class="material-icons">personal_injury</span>
+            </div>
+            <p class="role-title">PACIENTE</p>
+          </div>
+        </div>
+
+        <div class="forms-container">
+          <form id="admin-form" class="login-form">
+            <h2>Administrador</h2>
+            <div class="form-group">
+              <input type="text" placeholder="Ingresa tu usuario" required />
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Ingresa tu contraseña" required />
+            </div>
+            <button type="submit" class="login-btn admin-btn">Continuar</button>
+            <a href="#" class="forgot-link">No recuerdo mi contraseña</a>
+          </form>
+
+          <form id="medic-form" class="login-form">
+            <h2>Médico</h2>
+            <div class="form-group">
+              <input type="text" placeholder="Ingresa tu usuario" required />
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Ingresa tu contraseña" required />
+            </div>
+            <button type="submit" class="login-btn medic-btn">Continuar</button>
+            <a href="#" class="forgot-link">No recuerdo mi contraseña</a>
+          </form>
+
+          <form id="patient-form" class="login-form">
+            <h2>Paciente</h2>
+            <div class="form-group">
+              <input type="text" placeholder="Ingresa tu usuario" required />
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Ingresa tu contraseña" required />
+            </div>
+            <button type="submit" class="login-btn patient-btn">Continuar</button>
+            <a href="#" class="forgot-link">No recuerdo mi contraseña</a>
+          </form>
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos y condiciones</a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-section">
+      <div class="bg-overlay"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
